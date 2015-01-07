@@ -37,6 +37,17 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        $third = new Student();
+        $third->surname = "Parry";
+        $third->first_name = "Jim";
+        $third->add_email('home', 'albert@braniacs.com');
+        $third->add_email('work1', 'a_einstein@bcit.ca');
+        $third->add_email('work2', 'albert@physics.mit.edu');
+        $third->add_grade(95);
+        $third->add_grade(95);
+        $third->add_grade(10);
+        $students['p444456'] = $third;
+
         ksort($students); // one of the many sort functions 
 
         foreach ($students as $student)
